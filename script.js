@@ -61,7 +61,15 @@ var len;
 function getRandomQuote() {
     return fetch('http://api.quotable.io/random')
       .then(response => response.json())
-      .then(data => data.content)
+      .then(data => data.content).catch( err => {
+        if (typeof err.text === 'function') {
+          err.text().then(errorMessage => {
+            this.props.dispatch(displayTheError(errorMessage))
+          });
+        } else {
+             console.log(err)
+        }
+      })
   }
 async function generateNewQuote() {
     var quote = await getRandomQuote();
