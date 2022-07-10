@@ -59,7 +59,7 @@ rot=setInterval(rotor,2000);
 setInterval(showTime,1000);
 var len;
 function getRandomQuote() {
-    return fetch('https//api.quotable.io/random')
+    return fetch('https://api.quotable.io/random')
       .then(response => response.json())
       .then(data => data.content)
   }
