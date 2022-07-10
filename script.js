@@ -28,7 +28,6 @@ newTime--;
 timer.innerText=newTime;
 wpm.innerText= Math.round((((charTyped-errors) / 5) / (60-newTime)) * 60);
 accuracy.innerText= (charTyped-errors)*100/(charTyped)+"%";
-
 }
 else
 {
@@ -57,6 +56,7 @@ document.location.reload();
 
 rot=setInterval(rotor,2000);
 setInterval(showTime,1000);
+
 var len;
 function getRandomQuote() {
     return fetch('https://api.quotable.io/random')
@@ -118,4 +118,6 @@ generateNewQuote();
     errors++;
     charTyped++;
     }
+    displayChar.forEach(ele=>ele.classList.remove('pointing'));
+    displayChar[charIndex].classList.add('pointing');
 });
