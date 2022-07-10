@@ -83,6 +83,7 @@ async function generateNewQuote() {
 }
 
 generateNewQuote();
+XHR.addEventListener('load', generateNewQuote)
 
  inputText.addEventListener('input',()=>
 {   
