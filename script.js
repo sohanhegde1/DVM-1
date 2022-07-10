@@ -26,8 +26,8 @@ if(newTime>0)
 { 
 newTime--;
 timer.innerText=newTime;
-wpm.innerText= Math.round((((charTyped-errors) / 5) / (60-newTime)) * 60);
-accuracy.innerText= (charTyped-errors)*100/(charTyped)+"%";
+wpm.innerText= Math.round((((charTyped/5)-errors) / (60-newTime)) * 60);
+accuracy.innerText=Math.round((((charTyped-errors)*100/(charTyped))+Number.EPSILON)*100)/100+"%";
 }
 else
 {
