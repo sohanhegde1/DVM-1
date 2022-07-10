@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+padding: 0%;
+margin: 0%;
+}
+body{
+background-color: black;
+color: white;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+ .header li {
+    float: left;
+  }
+  
+ .header li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+  }
+  
+.header li a:hover
+{
+border-bottom: 2px solid yellow;
+}
+.mid1
+{
+position: absolute;
+}
+.mid2
+{
+position: absolute;
+}
+.box1
+{
+height: 30vh;
+width:70vw;  
+padding: 0%;
+margin: 0%;
+border:5px solid white;
+position:relative;
+top: 25vh;
+left:15vw;
+z-index: 1;
+overflow: scroll;
+}
+.box1 h1
+{
+ padding: 10px;
+}
+.box2
+{
+    height: 30vh;
+    width:70vw;  
+    padding: 0%;
+    margin: 0%;
+    border:5px solid white;
+position:relative;
+top: 25vh;
+left:15vw;
+z-index: -1111;
+}
+.logo
+{
+font-size: 50px;
+color: yellowgreen;
+margin-left: 5px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+textarea {
+    padding: 10px;
+    background: transparent;
+    color:transparent;
+    resize: none;
+    border:0;
+    width: 100%;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    height: 100%;
+    position: absolute;
+    caret-color:transparent
+}
+.items
+{
+display:grid;
+grid-template-columns: 25vw 25vw 25vw 25vw;
+
+position:absolute;
+top: 69vh;
+font-family: 'Lato', sans-serif;
+align-items: center;
+justify-items: center;
+
+}
+.fa-hourglass-end
+{
+
+color: yellow;
+font-size: 100px;
+transition: 2s;
+transform: none;
+}
+.fa-arrows-rotate
+{ 
+    color: yellow;
+    font-size: 100px; 
+    transition: transform 1s;
+    
+}
+.fa-arrows-rotate:hover
+{
+transition: transform 1s;
+transform:rotate(90deg);
+
+}
+.restart:hover
+{
+cursor: pointer;
+transition: transform 1s;
+}
+
+.clock
+{
+    color: yellow;
+    font-size: 50px;
+}
+.items h2
+{
+color: yellow;
+padding-top: 15px;
+}
+.fa-percent
+{
+color: yellow;
+
+    color: yellow;
+    font-size: 100px;   
+}
+.fa-bullseye
+{  
+    color: yellow;
+    font-size: 100px;   
+}
+.correct
+{
+color: yellow;
+}
+.incorrect
+{
+color: red;
+}
+.norm
+{
+color: white;
+}
+#accur
+{
+    color: yellow;
+padding-top: 15px;
+
+font-size: 24px;
+
+}
+#wpm1
+{
+    color: yellow;
+    padding-top: 15px;
+    
+    font-size: 24px;
+    justify-content: center;
+}
